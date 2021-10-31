@@ -1,0 +1,5 @@
+1.Display the names of all workers in the accounting department. Use the ‘Accounting’ as a condition and not the department id. (4points)
+
+Select firstName, lastName
+from worker
+where departmentID = (select departmentID from dept where departmentName = 'Accounting')
