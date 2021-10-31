@@ -1,0 +1,7 @@
+4.Display an alphabetical list of names of all workers assigned to project 1001, sorted by last name. (4points)
+
+select lastname, firstname
+from worker w, assign a
+where w.empid = a.empid
+and a.projno = '1001'
+order by lastname

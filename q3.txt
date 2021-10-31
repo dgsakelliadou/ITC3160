@@ -1,0 +1,4 @@
+3.Assuming that salary contains annual salary, find each worker’s ID, name, and monthly salary. (4points)
+
+select empId, firstName, lastName, round(salary/12,2) as monthly_salary
+from worker
