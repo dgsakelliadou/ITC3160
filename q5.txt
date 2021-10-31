@@ -1,0 +1,6 @@
+5.Display the name of the employee in the research department who has the lowest salary. (6points)
+
+select firstname, lastname
+from worker w
+where w.salary = (select min(salary) from worker where departmentid = (select departmentid from dept where departmentname = 'Research'))
+group by firstname, lastname, salary
