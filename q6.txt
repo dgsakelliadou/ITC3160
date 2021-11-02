@@ -1,0 +1,8 @@
+SELECT PROJNO ,
+PROJNAME ,
+PROJMGRID ,
+BUDGET ,
+STARTDATE ,
+EXPECTEDDURATIONWEEKS 
+from project p
+where p.budget = (select max(budget)from project)
