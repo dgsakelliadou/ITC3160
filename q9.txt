@@ -1,0 +1,4 @@
+CREATE VIEW ProjectWorkers (projno, projname, empid, lastname, firstname)
+AS SELECT p.projno, p.projname, w.empid, w.lastname, w.firstname
+FROM project p, worker w, assign a
+WHERE w.empid = a.empid 
