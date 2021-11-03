@@ -1,0 +1,3 @@
+SELECT firstname, lastname, rating
+FROM worker w, project p, assign a 
+WHERE p.projmgrid = (select w.empid from worker where firstname = 'Michael' and lastname = 'Burns')
