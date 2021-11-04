@@ -1,0 +1,7 @@
+8.Display an alphabetical list of names and corresponding ratings of all workers on any project that is managed by Michael Burns. Use ‘Michael and ‘Burns’ as conditions. (4points)
+
+select firstname, lastname, rating
+from assign a, worker w
+where a.projno IN (select projno from project p where p.projmgrid=(select empid from worker where firstname = 'Michael' and lastname = 'Burns'))
+and w.empid = a.empid
+order by lastname, firstname
