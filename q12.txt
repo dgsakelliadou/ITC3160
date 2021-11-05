@@ -1,0 +1,3 @@
+update assign 
+set hoursassigned = 10
+where projno = 1019 and empid = 110
