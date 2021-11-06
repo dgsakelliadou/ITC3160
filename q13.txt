@@ -1,0 +1,6 @@
+13.For all projects starting after Sep 1, 2021, find the project number and the IDs and names of all workers assigned to them. (4points)
+
+select  p.projno, a.empid, w.lastname, w.firstname
+from project p, assign a, worker w 
+where a.empid = w.empid and a.projno = p.projno and p.startdate > '1-Sep-2021'
+order by projno
