@@ -1,0 +1,5 @@
+14.For each project, list the project number, how many workers are assigned to it and how many hours they are assigned for. (6points)
+select projno,count(empid),sum(hoursassigned) 
+from assign
+group by projno
+order by projno
