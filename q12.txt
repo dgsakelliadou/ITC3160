@@ -1,3 +1,6 @@
+12.	Change the hours, which employee 110 is assigned to project 1019, from 20 to 10. (4points)
+
+
 update assign 
 set hoursassigned = 10
 where projno = 1019 and empid = 110
