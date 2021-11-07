@@ -1,3 +1,6 @@
+11.	Add new workers, named with your names and your IDs to the research department. Assign your selves into 2 projects each. Select everything from the view you created in Exercise 7. (6points)
+
+
 insert into worker values(243439,'Sakelliadou', 'Danai Georgia', 2, '20-Dec-1998','5-Nov-2021', 50000);
 insert into worker values(253537, 'Vertsiotis Natsis','Andreas', 2, '12-Feb-2002', '5-Nov-2021', 50000);
 
