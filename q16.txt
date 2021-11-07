@@ -1,0 +1,6 @@
+16.Display a list of project numbers and names and starting dates of all projects that have the same starting date. (6points)
+
+select projno, projname, startdate
+from project 
+where startdate in (select startdate from project group by startdate having 
+count(*) > 1)
