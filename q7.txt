@@ -1,3 +1,5 @@
+7.Display the names and departments of all workers on project 1019. (4points)
+
 SELECT firstname, lastname, departmentID
 FROM worker w, assign a
 WHERE w.empid = a.empid
