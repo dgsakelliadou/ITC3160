@@ -1,5 +1,5 @@
 insert into worker values(243439,'Sakelliadou', 'Danai Georgia', 2, '20-Dec-1998','5-Nov-2021', 50000);
-insert into worker values(253537, 'Vervitsiotis Natsis','Andreas', 2, '12-Feb-2002', '5-Nov-2021', 50000);
+insert into worker values(253537, 'Vertsiotis Natsis','Andreas', 2, '12-Feb-2002', '5-Nov-2021', 50000);
 
 INSERT INTO Assign VALUES (1001, 243439, 30,5);
 INSERT INTO Assign VALUES (1005, 243439, 30,5);
