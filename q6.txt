@@ -1,3 +1,5 @@
+6.Display details of the project with the highest budget. (4points)
+
 SELECT *
 from project p
 where p.budget = (select max(budget)from project)
