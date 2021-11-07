@@ -1,0 +1,3 @@
+SELECT projname, projno
+FROM project_list 
+WHERE empid = 101
