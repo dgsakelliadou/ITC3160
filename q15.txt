@@ -1,0 +1,6 @@
+15.Find the employee names and department manager names of all workers who are not assigned to any project. (6points)
+
+select w1.lastname , w1.firstname , w2.lastname as managerlastname, w2.firstname as managerfirstname
+from dept d left join worker w1 on  w1.empid not in (select empid from assign)
+left join worker w2 on d.mgrid = w2.empid 
+where d.departmentid = w1.departmentid
