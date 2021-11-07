@@ -1,0 +1,5 @@
+18.Display the employee ID and project number of all employees who have no ratings on that project
+
+select empid, projno
+from assign where rating is null
+order by empid
