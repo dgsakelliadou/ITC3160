@@ -1,4 +1,7 @@
-CREATE VIEW ProjectWorkers (projno, projname, empid, lastname, firstname)
+9.Create a view that has project number and name of each project, along with the IDs and names of all workers assigned to it. (6points)
+
+create view project_list 
 AS SELECT p.projno, p.projname, w.empid, w.lastname, w.firstname
 FROM project p, worker w, assign a
-WHERE w.empid = a.empid 
+WHERE w.empid = a.empid
+AND p.projno = a.projno;
