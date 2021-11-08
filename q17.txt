@@ -1,14 +1,7 @@
 ALTER TABLE PROJECT
 ADD STATUS VARCHAR2(20 BYTE)
 
-INSERT INTO Project VALUES (1001,'Jupiter', 101, 300000,'01-Feb-2020', 60, 'Active');
-INSERT INTO Project VALUES (1005,'Saturn', 101, 400000,'01-Jun-2021', 35, 'Active');
-INSERT INTO Project VALUES (1019,'Mercury', 110, 350000,'15-Feb-2020', 40, 'Active');
-INSERT INTO Project VALUES (1025,'Neptune', 110, 600000,'01-Feb-2021', 45, 'Completed');
-INSERT INTO Project VALUES (1030,'Pluto', 110, 380000,'15-Sep-2021', 10, 'Active');
-INSERT INTO Project VALUES (1031,'MarcoPolo', 103, 420000,'10-Oct-2021', 12, 'Cancelled');
-INSERT INTO Project VALUES (1032,'Mango', 101, 720000,'15-Sep-2021', 50, 'Active');
-INSERT INTO Project VALUES (1033,'Bruno', 101, 440000,'25-Sep-2021', 40, 'Active');
+
 
 UPDATE PROJECT 
 SET status = 'Active' WHERE projno = 1001
