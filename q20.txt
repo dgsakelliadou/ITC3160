@@ -1,0 +1,37 @@
+20.	Write a trigger that will update the numEmployeesAssigned field correctly whenever an assignment is made, dropped, or updated. (6points)
+
+We wrote 3 triggers, each for each action.
+
+1 . update
+create or replace TRIGGER UPDATE_ASSIGN
+after update of empid, projno on assign
+    for each row
+begin
+        update project
+            set numemployeesassigned = numemployeesassigned - 1
+            where projno = :old.projno;
+        update project
+            set numemployeesassigned = numemployeesassigned + 1
+            where projno = :new.projno;
+end;
+
+2. deletion
+create or replace TRIGGER UPDATE_ASSIGN_delete
+after delete on assign 
+    for each row
+begin
+update project 
+    set numemployeesassigned = numemployeesassigned - 1
+    where projno= :old.projno; 
+end;
+
+3.insertion
+create or replace TRIGGER UPDATE_ASSIGN_insert
+after insert on assign 
+    for each row
+begin
+update project 
+    set numemployeesassigned = numemployeesassigned + 1
+    where projno= :new.projno; 
+end;
+
