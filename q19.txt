@@ -1,10 +1,16 @@
 19.Add a field called numEmployeesAssigned to the Project table.Use the UPDATE command to insert values into the field to correspond to the current information in the Assign table. (6points)
-
 alter table project
-add numEmployeesAssigned varchar2(20);
+add numEmployeesAssigned int;
 
+update project set numEmployeesAssigned = '1' where projno = '1033';
+update project set numEmployeesAssigned = '1' where projno = '1032';
+update project set numEmployeesAssigned = '1' where projno = '1031';
+update project set numEmployeesAssigned = '3' where projno = '1030';
+update project set numEmployeesAssigned = '1' where projno = '1025';
+update project set numEmployeesAssigned = '2' where projno = '1019';
+update project set numEmployeesAssigned = '3' where projno = '1005';
+update project set numEmployeesAssigned = '6' where projno = '1001';
 
-update project set numEmployeesAssigned = '1' where projno = '1033'
 
 
 
